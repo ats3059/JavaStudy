@@ -23,6 +23,7 @@ public class ConstructThis {
     ConstructThis(){
         this("인스턴스변수1","인스턴스변수2");
     }
+
     ConstructThis(String iv1, String iv2){
         this.iv1 = iv1;
         this.iv2 = iv2;
