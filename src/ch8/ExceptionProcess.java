@@ -67,14 +67,31 @@ public class ExceptionProcess {
             //Checked
             //컴파일러가 예외를 필수적으로 처리하라고 하는 것
             throw new Exception("1234");
+            //Unchecked
+            // 컴파일러가 예외 처리 여부를 체크 안함
+
         }catch(Exception e){
             //현재 예외에서 발생한 메시지
             e.getMessage();
             //예외가 발생한 호출스택을 불러온다
             e.getStackTrace();
         }
-        //Unchecked
-        // 컴파일러가 예외 처리 여부를 체크 안함
-        throw new RuntimeException();
+
+        //CheckedException 을 UnCheckedException 으로 변경
+        throw new RuntimeException(new Exception("1234"));
     }
+
+    //예외를 되던지기
+    //해당 메서드에서 한 번 예외를 처리한 뒤
+    //메서드를 호출한 곳에서 한 번 더 예외를 처리해준다.
+    void method() throws Exception{
+        try{
+            throw new Exception("예외발생");
+        }catch (Exception e){
+            throw e;
+        }
+
+    }
+
+
 }
