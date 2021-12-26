@@ -1,4 +1,4 @@
-package ch6;
+package ch11;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -59,8 +59,13 @@ public class ArrayListStudy {
         //list에서 list2와 중복된 부분만 남기고 나머지는 제외
         list.retainAll(list2);
         printList(list,"list");
-        
 
+        for(int i = 0; i < list2.size(); i++){
+            if(list.contains(list2.get(i))){
+                list2.remove(i);
+            }
+        }
+        printList(list,"retainAll list2");
 
 
 
