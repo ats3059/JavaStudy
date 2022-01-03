@@ -1,4 +1,7 @@
 package ch8;
+
+import java.util.NoSuchElementException;
+
 /*
 예외처리
 
@@ -64,6 +67,8 @@ Exception 클래스는 두 부류로 나눠진다
 public class ExceptionProcess {
     public static void main(String[] args) {
         try{
+
+            //전략 1 해당 메서드에서 예외를 처리한다.
             //Checked
             //컴파일러가 예외를 필수적으로 처리하라고 하는 것
             throw new Exception("1234");
@@ -81,13 +86,19 @@ public class ExceptionProcess {
         throw new RuntimeException(new Exception("1234"));
     }
 
+    //전략 2
     //예외를 되던지기
     //해당 메서드에서 한 번 예외를 처리한 뒤
     //메서드를 호출한 곳에서 한 번 더 예외를 처리해준다.
     void method() throws Exception{
+
         try{
+            //전략 3 예외전환
             throw new Exception("예외발생");
         }catch (Exception e){
+            NoSuchElementException nse = new NoSuchElementException();
+            //연결된 예외 NoSuchElementException이 발생한 이유는 Exception e 때문이다.
+            nse.initCause(e);
             throw e;
         }
 
