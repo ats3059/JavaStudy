@@ -43,7 +43,6 @@ class Reverse implements Comparator {
 
             return co1.compareTo(co2) * -1;
         }
-
         return -1;
     }
 }
