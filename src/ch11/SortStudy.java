@@ -1,6 +1,7 @@
 package ch11;
 
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.Comparator;
 
 public class SortStudy {
@@ -19,7 +20,11 @@ public class SortStudy {
             }
         }
 
-        System.out.println(Arrays.toString(intArr));
+        Arrays.sort(intArr);
+
+
+
+
 
 
         String[] str = {"hello","ab","cd","AB","CD"};

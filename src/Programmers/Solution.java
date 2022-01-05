@@ -33,9 +33,7 @@ public class Solution {
     private static double getSecond(String str) {
         String[] tempArr = str.split(" ");
         String result = tempArr[2];
-
         double convertSec = Double.parseDouble(result.substring(0, result.length() - 1));
-
         return convertSec;
     }
 
