@@ -4,13 +4,13 @@ package ch13;
 public class Thread6 implements Runnable {
     Account account = new Account();
 
+
     @Override
     public void run() {
         while (account.getStock() > 0) {
-            account.moneyStock(account.outMoney(), account.getStock());
+            System.out.println("남은돈" + account.getStock() + " " + account.moneyStock(account.outMoney(), account.getStock()));
         }
     }
-
 }
 
 class Start {
