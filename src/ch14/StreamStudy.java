@@ -1,5 +1,8 @@
 package ch14;
 
+import java.io.BufferedInputStream;
+import java.io.File;
+import java.io.FileInputStream;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
@@ -57,7 +60,7 @@ new Random().ints(); -> 무한스트림
 
  */
 public class StreamStudy {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception{
         // 스트링타입의 LIST를 생성
         List<String> stringList = Arrays.asList("123","456");
         // List 생성 후 스트림 열고 최종연산 수행 ( 메서드 참조 )

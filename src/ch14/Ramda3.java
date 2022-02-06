@@ -1,6 +1,8 @@
 package ch14;
 
 
+import java.util.function.Function;
+
 public class Ramda3 {
 /*
 메서드 참조
