@@ -1,9 +1,6 @@
 package ch14;
 
-import java.util.ArrayList;
-import java.util.Comparator;
-import java.util.List;
-import java.util.Random;
+import java.util.*;
 import java.util.function.Supplier;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
@@ -24,6 +21,9 @@ public class StreamSort {
         studentList.stream().sorted(Comparator.comparing(Student::getClassNum)
                             .thenComparing(Comparator.naturalOrder()))
                    .forEach(System.out::println);
+
+        Optional<Student> max = studentList.stream().max(Comparator.comparing(Student::getTotal).thenComparing(Student::getClassNum));
+        System.out.println(max);
 
 
     }
