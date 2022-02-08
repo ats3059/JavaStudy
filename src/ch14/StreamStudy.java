@@ -79,5 +79,8 @@ public class StreamStudy {
         Stream<Double> integerStream2 = Stream.generate(Math::random).limit(10);
         integerStream2.forEach(System.out::println);
 
+
+
+
     }
 }
