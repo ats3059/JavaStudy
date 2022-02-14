@@ -71,7 +71,7 @@ public class EnumStudy {
     public static void main(String[] args) {
         Fruit fruit2 = Fruit.BANANA;
 
-
+        System.out.println(Fruit.BANANA);
 
         while(true){
             Order order = null;
