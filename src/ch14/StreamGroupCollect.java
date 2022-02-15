@@ -64,6 +64,16 @@ public class StreamGroupCollect {
 
         mapMap.get(true).get(true).forEach(System.out::println);
 
+        System.out.printf("%n4. 다중분할(성별 ,학년, 반)%n");
+        Map<Boolean,Map<Boolean,List<StudentCol>>> isMaleIsHakMap =
+                Stream.of(stuArr).sorted(Comparator.comparing(StudentCol::getBan).thenComparing(StudentCol::getScore))
+                .collect(
+                        partitioningBy(StudentCol::isMale
+                                ,partitioningBy(obj -> obj.getHak() == 1)
+                        )
+                );
+        isMaleIsHakMap.forEach((k,v) -> v.forEach((key,val) -> System.out.println(val)));
+
 
 
 
