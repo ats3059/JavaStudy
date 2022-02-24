@@ -12,32 +12,27 @@ public class TwoPointers4 {
             arr[i] = kb.nextInt();
         }
         TwoPointers4 tp = new TwoPointers4();
-        System.out.println(tp.solution(n,m,arr));
+        System.out.println(tp.solution(n, m, arr));
     }
 
-    public int solution(int n, int k, int[] arr){
+    public int solution(int n, int k, int[] arr) {
         int answer = 0;
 
         int lt = 0;
-        int rt = 0;
         int sum = 0;
-        for(int i = 0; i < n; i++){
 
-            if(sum > k){
-                sum -= arr[lt];
-                lt++;
-            }else if(sum < k){
-                rt++;
-                sum += arr[rt];
+        for(int rt = 0;  rt < n; rt++){
+            sum += arr[rt];
+            if(sum == k) answer++;
+            while(sum > k){
+                sum -= arr[lt++];
+                if(sum == k) {
+                    answer++;
+                    sum -= arr[lt++];
+                }
             }
-
-            if(sum == k){
-                answer++;
-                sum-= arr[lt];
-                lt++;
-            }
-
         }
+
 
 
         return answer;

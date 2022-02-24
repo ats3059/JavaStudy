@@ -1,14 +1,18 @@
 package Programmers;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 public class ArrayTest2 {
     public static void main(String[] args) {
         ArrayTest2 at = new ArrayTest2();
 //        at.solution(7);
 //        at.solution2(10);
-        at.solution3(10);
+//        at.solution3(10);
+        String str ;
 
+        System.out.println(10%3);
     }
 
 
@@ -20,7 +24,8 @@ public class ArrayTest2 {
             ints[i] = ints[i-1] + ints[i-2];
         }
         System.out.println(Arrays.toString(ints));
-
+        List<Integer> list = new ArrayList<>();
+        list.toArray(new Integer[list.size()]);
         return 0;
     }
 
