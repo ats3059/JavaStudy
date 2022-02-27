@@ -25,6 +25,9 @@ public class QstackTest3 {
 
         QstackTest3 qt = new QstackTest3();
         System.out.println(qt.solution(n,arr,m,buc));
+
+
+
     }
 
     int solution(int n, int[][] arr, int m, int[] buc) {
