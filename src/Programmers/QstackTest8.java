@@ -20,7 +20,44 @@ public class QstackTest8 {
 
     int solution(int n , int m , int[] arr){
         int answer = 0;
+        int target = arr[m];
+
+        Queue<Person> q = new LinkedList<>();
+
+        for(int i = 0; i < n; i++){
+            q.offer(new Person(i,arr[i]));
+        }
+
+        while(!q.isEmpty()){
+            Person tmp = q.poll();
+            for(Person x : q){
+                if(tmp.val < x.val) {
+                    q.offer(tmp);
+                    tmp = null;
+                    break;
+                }
+            }
+
+            if(tmp != null) {
+                answer++;
+                if(tmp.num == m && tmp.val == target) break;
+            }
+
+        }
+
+
+
 
         return answer;
+    }
+}
+
+
+class Person{
+    int num;
+    int val;
+    Person(int num , int val){
+        this.num = num;
+        this.val = val;
     }
 }
