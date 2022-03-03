@@ -2,7 +2,7 @@ package ch11;
 
 import java.util.*;
 
-class Product {
+class Product  {
     String name;
 
     Product(String name) {
@@ -76,9 +76,6 @@ public class GenericsStudy {
         //형변환 List<Audio> -> List<? extends Product>
         List<? extends Product> convertGenericList = audioList;
 
-
-
-
     }
 }
 
@@ -101,6 +98,5 @@ class MakeJcf {
             System.out.println("iter.next = " + iter.next());
         }
     }
-
 
 }
