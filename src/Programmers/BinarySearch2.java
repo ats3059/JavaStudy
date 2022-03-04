@@ -1,6 +1,7 @@
 package Programmers;
 
 import java.util.Arrays;
+import java.util.function.Predicate;
 
 public class BinarySearch2 {
     public static void main(String[] args) {

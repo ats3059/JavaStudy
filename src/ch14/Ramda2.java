@@ -5,7 +5,7 @@ import java.util.function.Predicate;
 
 public class Ramda2 {
     /*
-        Predicate의 결합
+    Predicate의 결합
 
         and(),or(),negate()로 두 Predicate를 하나로 결합(default 메서드)
 
@@ -48,7 +48,7 @@ public class Ramda2 {
         System.out.println(equalString2);
         System.out.println("isEqual = " + isEqual);
 
-
+        
         
         
         
