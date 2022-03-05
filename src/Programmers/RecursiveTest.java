@@ -26,16 +26,10 @@ public class RecursiveTest {
     }
 
     static int dfsFibo(int n) {
-        if (n == 1) return fiboArr[n] = 1;
+        if(fiboArr[n] > 0) return fiboArr[n];
+        else if (n == 1) return fiboArr[n] = 1;
         else if (n == 2) return fiboArr[n] = 1;
-        else {
-            if (fiboArr[n] == 0) {
-                fiboArr[n-2] = dfsFibo(n-2);
-                fiboArr[n-1] = dfsFibo(n-1);
-                fiboArr[n] = fiboArr[n-1] + fiboArr[n-2];
-            }
-            return fiboArr[n];
-        }
+        return fiboArr[n] = dfsFibo(n-2) + dfsFibo(n-1);
     }
 }
 
