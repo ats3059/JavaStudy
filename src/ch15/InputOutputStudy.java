@@ -31,6 +31,9 @@ public class InputOutputStudy {
         java에서 char = 2byte
         일반 스트림으로 내용을 읽으면 1byte이므로 사용이 어렵지만
         문자 스트림을 사용하면 2byte로 사용 가능..
+        단순히 2byte처리만을 위한것이 아닌 문자데이터를 다루는데 필요한 인코딩을 자동으로 처리해준다
+        문자기반 스트림/ Reader와 Writer 그리고 그 자손들은 여러 종류의 인코딩과 자바에서 사용하는 유니코드(UTF-16)간의 변환을 자동으로 처리해준다
+        Reader는 특정 인코딩을읽어서 유니코드로 변환하고 Writer는 유니코드를 특정 인코딩으로 변환하여 저장한다.
 
         보조 스트림 사용 시 (BufferedOutputStream) close() 호출하면
         기반 스트림(FileInputStream()같은..)의 close()를 호출하고
