@@ -20,8 +20,8 @@ public class WordConvert {
         this.words = words;
         this.chk = new int[words.length];
         int answer = 0;
-        String str = Arrays.stream(words).filter(s -> s.equals(target)).findFirst().orElse("NO");
-        if(str.equals("NO")) return 0;
+        long cnt = Arrays.stream(words).filter(s -> s.equals(target)).count();
+        if(cnt == 0) return 0;
         answer = bfs(begin);
         return answer;
     }
