@@ -1,52 +1,50 @@
 package Programmers;
 
-import jdk.swing.interop.SwingInterOpUtils;
-
 import java.util.Arrays;
 import java.util.Scanner;
 
 public class Maze {
     int answer = 0;
     static int[][] arr;
+    static int[] roadX;
+    static int[] roadY;
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        arr = new int[7][7];
+        arr = new int[8][8];
 
-        for(int i = 0; i < 7; i++){
-            for(int j = 0; j < 7; j++){
+        for(int i = 1; i <= 7; i++){
+            for(int j = 1; j <= 7; j++){
                 arr[i][j] = sc.nextInt();
             }
         }
-
+        roadX = new int[]{-1, 0, 1, 0};
+        roadY = new int[]{0,1,0,-1};
+        arr[1][1] = 1;
 
         Maze maze = new Maze();
-        maze.dfs(0,0);
+        maze.dfs(1,1);
+        System.out.println(maze.answer);
 
     }
 
     void dfs(int n , int m){
-        if(n == 6 && m == 6){
+        if(n == 7 && m == 7){
             answer++;
-            System.out.println("answer = " + answer);
-            return;
         } else{
-            System.out.println("n = " + n  + " m = " + m);
-            if(hasPlMove(m)) if(arr[n][m+1] == 0) dfs(n,m+1);
-            if(hasPlMove(n)) if(arr[n+1][m] == 0) dfs(n+1,m);
-            if(hasMinMove(m)) if(arr[n][m-1] == 0) dfs(n,m-1);
-            if(hasMinMove(n)) if(arr[n-1][m] == 0) dfs(n-1,m);
+            for(int i = 0 ; i < 4; i++){
+                int nx = n + roadX[i];
+                int ny = m + roadY[i];
+                if(nx >= 1 && nx <= 7 && ny >= 1 && ny <= 7 && arr[nx][ny] == 0){
+                    arr[nx][ny] = 1;
+                    dfs(nx,ny);
+                    arr[nx][ny] = 0;
+                }
+            }
         }
 
 
     }
-    boolean hasPlMove(int x){
-        if(x+1 > 6) return false;
-        return true;
-    }
-    boolean hasMinMove(int x){
-        if(x-1 < 0) return false;
-            return true;
-    }
+
 
 
 
