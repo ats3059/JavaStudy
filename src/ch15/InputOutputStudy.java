@@ -48,8 +48,9 @@ public class InputOutputStudy {
 //        FileReader fr = new FileReader(new File(filePath));
 //        FileWriter fw = new FileWriter(new File("C:\\Users\\user1\\Desktop\\copy.txt"),true);
         //try - with - resources 이용하면 close()를 직접 호출하지 않아도 자동호출 되도록 한다.
+        //BufferedOutputStream은 기본적으로 크기를 지정해주지 않는다면 8192byte의 크기를 갖게된다.
         try(  FileOutputStream fos = new FileOutputStream(new File("C:\\Users\\user1\\Desktop\\copy.txt"));
-              BufferedOutputStream bos = new BufferedOutputStream(fos,5);){
+              BufferedOutputStream bos = new BufferedOutputStream(fos,5)){
             for(int i = '1'; i <= '9'; i++){
                 bos.write(i);
             }
