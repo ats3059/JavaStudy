@@ -45,20 +45,37 @@ public class InputOutputStudy {
         FileInputStream fis = null;
         String filePath = "C:\\Users\\user1\\Desktop\\StateLessUseReason.txt";
         fis = new FileInputStream(new File(filePath));
-//        FileReader fr = new FileReader(new File(filePath));
-//        FileWriter fw = new FileWriter(new File("C:\\Users\\user1\\Desktop\\copy.txt"),true);
+        FileReader fr = new FileReader(new File(filePath));
+        FileWriter fw = new FileWriter(new File("C:\\Users\\user1\\Desktop\\copy.txt"));
+        BufferedReader br = new BufferedReader(fr);
+        BufferedWriter bw = new BufferedWriter(fw);
         //try - with - resources 이용하면 close()를 직접 호출하지 않아도 자동호출 되도록 한다.
         //BufferedOutputStream은 기본적으로 크기를 지정해주지 않는다면 8192byte의 크기를 갖게된다.
-        try(  FileOutputStream fos = new FileOutputStream(new File("C:\\Users\\user1\\Desktop\\copy.txt"));
-              BufferedOutputStream bos = new BufferedOutputStream(fos,5)){
-            for(int i = '1'; i <= '9'; i++){
-                bos.write(i);
-            }
-        }catch (Exception e){
+        int x = 0;
+        int cnt = 0;
+        while((x = fr.read()) > -1){
+            cnt++;
+            fw.write(x);
         }
 
 
-        int i = 0;
+
+
+
+
+
+        System.out.println(cnt);
+
+
+//        try(  FileOutputStream fos = new FileOutputStream(new File("C:\\Users\\user1\\Desktop\\copy.txt"));
+//              BufferedOutputStream bos = new BufferedOutputStream(fos,5)){
+//            for(int i = '1'; i <= '9'; i++){
+//                bos.write(i);
+//            }
+//        }catch (Exception e){
+//        }
+
+
 //        while((i = fr.read()) > -1){
 //            fw.write(i);
 //        }
