@@ -1,8 +1,8 @@
 package ch16;
 
-import java.io.DataInputStream;
+
 import java.io.IOException;
-import java.io.InputStream;
+
 import java.net.Socket;
 
 public class TcpIpClient5 {
