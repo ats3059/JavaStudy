@@ -37,7 +37,6 @@ public class Ramda2 {
         Predicate<Integer> isMod = i -> i % 2 == 0;
         Predicate<Integer> not100Up = is100Up.negate();
         Predicate<Integer> all = not100Up.and(is200Down.or(isMod));
-        
         if(all.test(150)) System.out.println("통과");
         String str1 = "pass";
         String str2 = "pass";
