@@ -14,11 +14,11 @@ public class NetworkEx4 {
         //openStream()은 -> url.openConnection() 호출 후 URLConnection을 반환받고
         //반환받은 URLConnection에서 InputStream을 반환 받은 것.
         //Http에서 Content를 반환 받는 것..
-        String address = "https://www.naver.com";
+        String address = "http://localhost:8090/api/default-handler-ex";
         URL url = new URL(address);
         String contentType = url.openConnection().getContentType();
         if(contentType.contains("text")) System.out.println("문자 정보니까 Reader사용해라");
-        
+        System.out.println(contentType);
 
 
 //        BufferedReader br = new BufferedReader(new InputStreamReader(url.openStream()));
