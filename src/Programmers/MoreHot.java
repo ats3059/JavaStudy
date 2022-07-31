@@ -6,7 +6,7 @@ public class MoreHot {
         System.out.println(new MoreHot().solution(new int[]{1, 2, 3, 9, 10, 12},7));
     }
 
-    public int solution(int[] scoville, int K) {:ㅈㅂㅣ
+    public int solution(int[] scoville, int K) {
         int answer = 0;
 
         PriorityQueue<Integer> q = new PriorityQueue<>();
