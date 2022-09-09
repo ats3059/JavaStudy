@@ -2,7 +2,6 @@ package ch15;
 
 import java.io.*;
 
-
 public class InputOutputStudy {
     /*
         15장 입출력 I/O
@@ -63,7 +62,6 @@ public class InputOutputStudy {
 
 
 
-
         System.out.println(cnt);
 
 
@@ -88,6 +86,7 @@ public class InputOutputStudy {
 
 
     }
+
 
 
 }
