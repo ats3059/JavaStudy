@@ -19,6 +19,7 @@ public class Ex13_12 {
 class Account{
     private int balance = 1000;
 
+
     public synchronized int getBalance() {
         return balance;
     }
