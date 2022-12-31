@@ -1,4 +1,4 @@
-package algo;
+package lecture;
 
 public class CreateDecimal {
     public static void main(String[] args) {

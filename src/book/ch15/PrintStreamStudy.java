@@ -1,6 +1,5 @@
-package ch15;
+package book.ch15;
 
-import java.io.PrintWriter;
 import java.util.Date;
 
 public class PrintStreamStudy {

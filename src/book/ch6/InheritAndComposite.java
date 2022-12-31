@@ -1,4 +1,4 @@
-package ch6;
+package book.ch6;
 
 public class InheritAndComposite {
     public static void main(String[] args) {

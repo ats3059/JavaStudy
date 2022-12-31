@@ -1,4 +1,4 @@
-package ch15;
+package book.ch15;
 
 import java.io.BufferedInputStream;
 import java.io.FileInputStream;

@@ -1,4 +1,4 @@
-package algo;
+package lecture;
 
 import java.util.HashSet;
 import java.util.Set;

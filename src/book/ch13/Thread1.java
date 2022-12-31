@@ -1,4 +1,4 @@
-package ch13;
+package book.ch13;
 
 /*
 프로세스와 스레드

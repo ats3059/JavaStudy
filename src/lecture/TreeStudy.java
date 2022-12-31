@@ -1,4 +1,4 @@
-package algo;
+package lecture;
 
 class Node{
     int val;

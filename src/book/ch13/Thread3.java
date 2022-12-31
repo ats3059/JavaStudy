@@ -1,4 +1,4 @@
-package ch13;
+package book.ch13;
 
 public class Thread3 implements Runnable {
     /*

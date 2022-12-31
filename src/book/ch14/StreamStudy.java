@@ -1,8 +1,5 @@
-package ch14;
+package book.ch14;
 
-import java.io.BufferedInputStream;
-import java.io.File;
-import java.io.FileInputStream;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Random;

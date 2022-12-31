@@ -1,4 +1,4 @@
-package ch11;
+package book.ch11;
 
 public class CollectionsStudy {
 }

@@ -1,4 +1,4 @@
-package ch15;
+package book.ch15;
 import java.io.*;
 public class PipedReaderWriter {
     public static void main(String args[]) {

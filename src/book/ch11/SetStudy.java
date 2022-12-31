@@ -1,8 +1,7 @@
-package ch11;
+package book.ch11;
 
 import java.util.HashSet;
 import java.util.Set;
-import java.util.SortedSet;
 import java.util.TreeSet;
 
 public class SetStudy {

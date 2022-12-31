@@ -1,4 +1,4 @@
-package ch13review;
+package book.ch13review;
 
 import javax.swing.*;
 

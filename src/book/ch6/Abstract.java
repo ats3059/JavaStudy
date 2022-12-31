@@ -1,6 +1,4 @@
-package ch6;
-
-import java.util.Arrays;
+package book.ch6;
 
 public class Abstract {
 

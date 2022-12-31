@@ -1,4 +1,4 @@
-package ch16;
+package book.ch16;
 
 import java.io.DataOutputStream;
 import java.io.IOException;

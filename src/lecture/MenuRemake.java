@@ -1,4 +1,4 @@
-package algo;
+package lecture;
 import java.util.*;
 public class MenuRemake {
     static Map<String,Integer> map = new HashMap<>();

@@ -1,7 +1,5 @@
-package ch14;
+package book.ch14;
 
-
-import java.util.function.Function;
 
 public class Ramda3 {
 /*

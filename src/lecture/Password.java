@@ -1,4 +1,4 @@
-package algo;
+package lecture;
 
 public class Password {
     public static void main(String[] args) {

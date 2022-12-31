@@ -1,4 +1,4 @@
-package ch14;
+package book.ch14;
 import java.util.*;
 import java.util.stream.*;
 import static java.util.stream.Collectors.*;

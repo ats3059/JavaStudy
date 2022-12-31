@@ -1,4 +1,4 @@
-package algo;
+package lecture;
 
 public class ArrayTest5 {
     public static void main(String[] args) {

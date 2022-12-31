@@ -1,4 +1,4 @@
-package ch11;
+package book.ch11;
 
 import java.util.LinkedList;
 import java.util.List;

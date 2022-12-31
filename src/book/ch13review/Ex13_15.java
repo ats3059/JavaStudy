@@ -1,4 +1,4 @@
-package ch13review;
+package book.ch13review;
 
 import java.util.ArrayList;
 
@@ -64,6 +64,7 @@ class Cook implements Runnable {
 }
 
 class Table {
+
     String[] dishNames = {"donut","donut","burger"};
     final int MAX_FOOD = 6;
     private ArrayList<String> dishes = new ArrayList<>();

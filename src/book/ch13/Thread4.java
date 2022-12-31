@@ -1,6 +1,4 @@
-package ch13;
-
-import jdk.jshell.SourceCodeAnalysis;
+package book.ch13;
 
 import java.util.Scanner;
 

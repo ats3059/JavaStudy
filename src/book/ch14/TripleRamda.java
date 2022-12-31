@@ -1,7 +1,4 @@
-package ch14;
-
-import java.util.ArrayList;
-import java.util.List;
+package book.ch14;
 
 @FunctionalInterface
 public interface TripleRamda<A,S,F,R> {

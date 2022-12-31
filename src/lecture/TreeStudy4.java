@@ -1,5 +1,5 @@
 
-package algo;
+package lecture;
 
 import java.util.LinkedList;
 import java.util.Queue;

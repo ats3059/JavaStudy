@@ -1,4 +1,4 @@
-package ch14;
+package book.ch14;
 
 import java.util.Arrays;
 import java.util.stream.Stream;

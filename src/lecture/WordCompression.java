@@ -1,4 +1,4 @@
-package algo;
+package lecture;
 
 public class WordCompression {
     public static void main(String[] args) {

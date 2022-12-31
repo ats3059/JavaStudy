@@ -1,11 +1,11 @@
-package ch16;
+package book.ch16;
 
 import java.net.InetAddress;
 import java.util.Arrays;
 
 public class NetworkEx1 {
     /*
-        자바의정석 ch16
+        자바의정석 Book.ch16
 
 	네트워킹
 

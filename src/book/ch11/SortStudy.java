@@ -1,4 +1,4 @@
-package ch11;
+package book.ch11;
 
 import java.util.Arrays;
 import java.util.Comparator;

@@ -1,4 +1,4 @@
-package algo;
+package lecture;
 
 import java.text.SimpleDateFormat;
 import java.util.*;

@@ -1,4 +1,4 @@
-package ch8;
+package book.ch8;
 
 import java.util.NoSuchElementException;
 

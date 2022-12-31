@@ -1,7 +1,4 @@
-package ch13review;
-
-import java.util.Random;
-import java.util.stream.IntStream;
+package book.ch13review;
 
 public class Ex13_12 {
 
